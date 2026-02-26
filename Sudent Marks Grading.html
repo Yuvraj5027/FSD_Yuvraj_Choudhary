@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Student Marks Grading System</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    body>
+        <h1>Student Marks Grading System</h1>
+    </body>
+    <script>
+        let marks=prompt("Enter your marks: ");
+        document.write("Marks obtained: "+marks+"<br>");
+        if(marks>=95 && marks<=100){
+            document.write("Grade: O");
+        }
+        else if(marks>=90 && marks<95){
+            document.write("Grade: A+");
+        }
+        else if(marks>=85 && marks<90){
+            document.write("Grade: A");
+        }
+        else if(marks>=80 && marks<85){
+            document.write("Grade: B+");
+        }
+        else if(marks>=75 && marks<80){
+            document.write("Grade: B");
+        }
+        else if(marks>=65 && marks<75){
+            document.write("Grade: C");
+        }
+        else if(marks>=50 && marks<65){
+            document.write("Grade: D");
+        }
+        else if(marks>=0 && marks<50){
+            document.write("Grade: F");
+        }
+        else{
+            document.write("Invalid Marks entered");
+        }
+    </script>
+</html>

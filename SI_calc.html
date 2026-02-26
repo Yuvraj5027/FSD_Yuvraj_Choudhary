@@ -1,0 +1,73 @@
+
+<html>
+<head>
+  <title>Simple Interest Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    .calculator {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    button:hover {
+      background: darkred;
+    }
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Simple Interest Calculator</h2>
+    <input type="number" id="principal" placeholder="Enter Principal (P)" />
+    <input type="number" id="rate" placeholder="Enter Rate (%) (R)" />
+    <input type="number" id="time" placeholder="Enter Time (Years) (T)" />
+    <button onclick="calculateSI()">Calculate</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+      let calculateSI = () => {
+      let P = document.getElementById("principal").value;
+      let R = document.getElementById("rate").value;
+      let T = document.getElementById("time").value;
+
+      if(P && R && T){
+        let SI = (P * R * T) / 100;
+        document.getElementById("result").innerText = "Simple Interest = ₹" + SI;
+      } else {
+        document.getElementById("result").innerText = "Please fill all fields!";
+      }
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+
+<html>
+  <head>
+    <title>Netflix India</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .logo {
+        width: 120px;
+      }
+
+      .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .sign-in {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .hero {
+        height: 100vh;
+        background-image: url('./Net_bg.webp');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        text-align: center;
+        max-width: 600px;
+      }
+
+      .overlay h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .overlay p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      input[type="email"] {
+        padding: 10px;
+        width: 60%;
+        border: none;
+      }
+
+      button[type="submit"] {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .trending {
+        padding: 40px 20px;
+        background-color: #111;
+      }
+
+      .trending h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+
+      .trending-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+      }
+
+      .trending-grid img {
+        width: 80%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="./Logonetflix.png" class="logo" />
+      <div class="nav-right">
+        <select>
+          <option>English</option>
+          <option>हिन्दी</option>
+        </select>
+        <button class="sign-in">Sign In</button>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="overlay">
+        <h1>Unlimited movies, shows, and more</h1>
+        <p>Starts at ₹149. Cancel at any time.</p>
+        <form>
+          <input type="email" placeholder="Email address" required />
+          <button type="submit">Get Started</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="trending">
+      <h2>Trending Now</h2>
+      <div class="trending-grid">
+        <img src="./hangover.jpg" alt="Show 1" />
+        <img src="./the-illustrated-posters-for-all-5-seasons-v0-ojcyf1mvfgyf1.jpg" alt="Show 2" />
+        <img src="./dictator.jpg" alt="Show 3" />
+        <img src="./51fWOBx3agL._AC_UF894,1000_QL80_.jpg" alt="Show 4" />
+      </div>
+    </div>
+  </body>
+</html>

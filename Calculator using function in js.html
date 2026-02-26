@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Calculator using arrow function</title>
+    </head>
+    <body>
+        <h1>Calculator using arrow function</h1>
+        <script>
+            let add=(a,b)=>{
+                return a+b;
+            }
+            let sub=(a,b)=>{
+                return a-b;
+            }
+            let mul=(a,b)=>{
+                return a*b;
+            }
+            let div=(a,b)=>{
+                return a/b;
+            }
+            a=Number(prompt("Enter first number: "));
+            b=Number(prompt("Enter second number: "));
+            document.write("Addition: "+add(a,b)+"<br>");
+            document.write("Subtraction: "+sub(a,b)+"<br>");
+            document.write("Multiplication: "+mul(a,b)+"<br>");
+            document.write("Division: "+div(a,b)+"<br>");
+        </script>
+    </body>
+</html>

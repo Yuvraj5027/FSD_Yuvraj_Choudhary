@@ -1,0 +1,102 @@
+<HTML>
+  <head>
+      <title>Calculator</title>
+      <style>
+          body {
+              background-color: #3b3b3b;
+              font-family: Arial;
+          }
+          .calc {
+              width: 280px;
+              margin: auto;
+              margin-top: 60px;
+              background: linear-gradient(#e1adad, #bcbcbc);
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0px 0px 10px black;
+              cursor: pointer;
+          }
+          .screen {
+              width: 250px;
+              height: 50px;
+              margin: auto;
+              margin-bottom: 20px;
+              background: linear-gradient(white, #d9d9d9);
+              border-radius: 5px;
+              box-shadow: inset 0px 0px 8px gray;
+          }
+          table {
+              margin: auto;
+              border-spacing: 10px;
+          }
+          td {
+              text-align: center;
+          }
+          .btn {
+              width: 55px;
+              height: 45px;
+              border-radius: 6px;
+              background: linear-gradient(#ffffff, #d7d7d7);
+              box-shadow: 1px 1px 5px gray;
+              font-size: 18px;
+              font-weight: bold;
+              cursor: pointer;
+              border: none;
+          }
+          .op {
+              background: linear-gradient(#444444, #1f1f1f);
+              color: white;
+          }
+          .eq {
+              background: linear-gradient(#444444, #1f1f1f);
+              color: white;
+          }
+          .clear {
+              background: linear-gradient(#ff4b4b, #a00000);
+              color: white;
+          }
+          button:hover {
+              box-shadow: 2px 2px 7px black;
+          }
+      </style>
+  </head>
+
+  <body>
+
+      <div class="calc">
+          
+          <div class="screen"></div>
+          <table>
+              <tr>
+                  <td><button class="btn">7</button></td>
+                  <td><button class="btn">8</button></td>
+                  <td><button class="btn">9</button></td>
+                  <td><button class="btn op">+</button></td>
+              </tr>
+
+              <tr>
+                  <td><button class="btn">4</button></td>
+                  <td><button class="btn">5</button></td>
+                  <td><button class="btn">6</button></td>
+                  <td><button class="btn op">-</button></td>
+              </tr>
+
+              <tr>
+                  <td><button class="btn">1</button></td>
+                  <td><button class="btn">2</button></td>
+                  <td><button class="btn">3</button></td>
+                  <td><button class="btn op">x</button></td>
+              </tr>
+
+              <tr>
+                  <td><button class="btn clear">C</button></td>
+                  <td><button class="btn">0</button></td>
+                  <td><button class="btn eq">=</button></td>
+                  <td><button class="btn op">/</button></td>
+              </tr>
+          </table>
+
+      </div>
+
+  </body>
+</HTML>

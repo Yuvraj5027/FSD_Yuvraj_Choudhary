@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Marriage Eligibility</title>
+    </head>
+    <body>
+        <h1>Marriage Eligibility Checker</h1>
+        <script>
+            let age=Number(prompt("Enter your age: "));
+            let gender=prompt("Enter your gender (male/female): ")
+            let isEligible=()=>{
+                if(gender=="male"){
+                    if(age>=21){
+                        return "You are eligible for marriage.";
+                    }
+                    else{
+                        return "You are not eligible for marriage.";
+                    }
+                }
+                else if(gender=="female"){
+                    if(age>=18){
+                        return "You are eligible for marriage.";
+                    }
+                    else{
+                        return "You are not eligible for marriage.";
+                    }
+                }
+                else{
+                    return "Invalid gender input.";
+                }
+            }
+            document.write(isEligible());
+        </script>
+    </body>
+</html>
